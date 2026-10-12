@@ -65,7 +65,7 @@ python3 scripts/merge-translations.py
 ## 验证
 
 ```sh
-dotnet run --projecttests/TransportTests/TransportTests.csproj -c Release
+dotnet run --project tests/TransportTests/TransportTests.csproj -c Release
 ```
 
 Windows 原生自检：

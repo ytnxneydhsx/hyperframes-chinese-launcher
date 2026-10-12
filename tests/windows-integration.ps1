@@ -3,18 +3,17 @@ $ErrorActionPreference = 'Stop'
 if (-not $env:GITHUB_ACTIONS) { throw 'This integration check is only for a disposable GitHub Windows runner.' }
 $root = Split-Path $PSScriptRoot -Parent
 $folder = Join-Path $env:RUNNER_TEMP 'hyperframes-official'
-$installer = Join-Path $env:RUNNER_TEMP 'Install-HyperFrames.exe'
+$archive = Join-Path $env:RUNNER_TEMP 'HyperFrames-official.zip'
 $metadata = Invoke-RestMethod 'https://static.heygen.ai/hyperframes-oss/desktop/latest.json'
-if (-not $metadata.windows.url.StartsWith('https://static.heygen.ai/hyperframes-oss/desktop/')) { throw 'Unexpected official download URL' }
-Invoke-WebRequest $metadata.windows.url -OutFile $installer
-if ((Get-FileHash $installer -Algorithm SHA256).Hash.ToLowerInvariant() -ne $metadata.windows.sha256) { throw 'Official installer checksum mismatch' }
-$setup = Start-Process $installer -ArgumentList @('/S', "/D=$folder") -PassThru
-if (-not $setup.WaitForExit(120000)) { throw 'Official installer did not complete within two minutes' }
-if ($setup.ExitCode -ne 0) { throw "Official installer exit code $($setup.ExitCode)" }
-$original = Join-Path $folder 'HyperFrames.exe'
-if (-not (Test-Path $original)) { throw 'Official installer did not create the requested application' }
+if (-not $metadata.windowsZip.url.StartsWith('https://static.heygen.ai/hyperframes-oss/desktop/')) { throw 'Unexpected official download URL' }
+Invoke-WebRequest $metadata.windowsZip.url -OutFile $archive
+if ((Get-FileHash $archive -Algorithm SHA256).Hash.ToLowerInvariant() -ne $metadata.windowsZip.sha256) { throw 'Official archive checksum mismatch' }
+Expand-Archive $archive -DestinationPath $folder
+$candidates = @(Get-ChildItem $folder -Filter HyperFrames.exe -File -Recurse)
+if ($candidates.Count -ne 1) { throw 'Official archive must contain exactly one HyperFrames.exe' }
+$original = $candidates[0].FullName
 $hashes = @{}
-foreach ($file in @($original, (Join-Path $folder 'resources/app.asar'))) {
+foreach ($file in @($original, (Join-Path (Split-Path $original -Parent) 'resources/app.asar'))) {
     if (Test-Path $file) { $hashes[$file] = (Get-FileHash $file -Algorithm SHA256).Hash }
 }
 $configDir = Join-Path $env:LOCALAPPDATA 'HyperFramesChinese'

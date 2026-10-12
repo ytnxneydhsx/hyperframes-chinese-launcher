@@ -46,6 +46,7 @@ static class Program
                 using var pipe = new NamedPipeClientStream(".", "HyperFramesChinese_" + suffix, PipeDirection.Out);
                 pipe.Connect(1500);
                 pipe.WriteByte(args.Contains("--quit") ? (byte)2 : (byte)1);
+                pipe.Flush();
 
             }
             catch

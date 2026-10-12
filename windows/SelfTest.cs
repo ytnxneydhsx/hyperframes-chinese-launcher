@@ -31,6 +31,7 @@ internal static class SelfTest
             try
             {
                 Console.Error.WriteLine("START " + name);
+                Console.Error.Flush();
                 action();
                 Console.Error.WriteLine("PASS " + name);
                 results.Add(new
@@ -44,6 +45,8 @@ internal static class SelfTest
             catch (Exception e)
             {
                 failed = true;
+                Console.Error.WriteLine("FAIL " + name + ": " + e);
+                Console.Error.Flush();
                 results.Add(new
                 {
                     name,
@@ -184,17 +187,33 @@ internal static class SelfTest
 {
     string Read(string name)
     {
-        using var stream = Assembly.GetExecutingAssembly().GetManifestResourceStream(name) ?? throw new Exception("资源缺失：" + name); using var reader = new StreamReader(stream); return reader.ReadToEnd();
+        using var stream = Assembly.GetExecutingAssembly().GetManifestResourceStream(name) ?? throw new Exception("资源缺失：" + name + "; 主程序集资源=" + string.Join(",", Assembly.GetExecutingAssembly().GetManifestResourceNames())); using var reader = new StreamReader(stream); return reader.ReadToEnd();
     }
     Assert(Read("translator.js").Contains("1.1.0")); using var dict = JsonDocument.Parse(Read("translations.zh-CN.json")); Assert(dict.RootElement.ValueKind == JsonValueKind.Object && dict.RootElement.EnumerateObject().Any()); using var templates = JsonDocument.Parse(Read("dynamic.zh-CN.json")); Assert(templates.RootElement.ValueKind == JsonValueKind.Array && templates.RootElement.GetArrayLength() > 0);
 }
 );
 
         Check("current-user-mutex-pipe", () =>
-{
-    string name = "HyperFramesChinese_selftest_" + WindowsIdentity.GetCurrent().User!.Value.Replace('-', '_') + "_" + Guid.NewGuid().ToString("N"); using var first = new Mutex(true, @"Local\" + name, out bool created); Assert(created); using var second = new Mutex(false, @"Local\" + name, out bool duplicate); Assert(!duplicate); using var server = new NamedPipeServerStream(name, PipeDirection.In, 1, PipeTransmissionMode.Byte, PipeOptions.Asynchronous | PipeOptions.CurrentUserOnly); var wait = server.WaitForConnectionAsync(); using var client = new NamedPipeClientStream(".", name, PipeDirection.Out); client.Connect(2000); client.WriteByte(1); Assert(wait.Wait(2000)); Assert(server.ReadByte() == 1);
-}
-);
+        {
+            string name = "HyperFramesChinese_selftest_" + WindowsIdentity.GetCurrent().User!.Value.Replace('-', '_') + "_" + Guid.NewGuid().ToString("N");
+            using var first = new Mutex(true, @"Local\" + name, out bool created);
+            Assert(created);
+            using var second = new Mutex(false, @"Local\" + name, out bool duplicate);
+            Assert(!duplicate);
+            using var timeout = new CancellationTokenSource(TimeSpan.FromSeconds(5));
+            using var server = new NamedPipeServerStream(name, PipeDirection.In, 1, PipeTransmissionMode.Byte, PipeOptions.Asynchronous | PipeOptions.CurrentUserOnly);
+            using var client = new NamedPipeClientStream(".", name, PipeDirection.Out, PipeOptions.Asynchronous);
+            var wait = server.WaitForConnectionAsync(timeout.Token);
+            client.ConnectAsync(timeout.Token).GetAwaiter().GetResult();
+            wait.GetAwaiter().GetResult();
+            Console.Error.WriteLine("PIPE connected");
+            client.WriteAsync(new byte[] { 1 }.AsMemory(), timeout.Token).AsTask().GetAwaiter().GetResult();
+            client.FlushAsync(timeout.Token).GetAwaiter().GetResult();
+            byte[] message = new byte[1];
+            server.ReadExactlyAsync(message.AsMemory(), timeout.Token).AsTask().GetAwaiter().GetResult();
+            Assert(message[0] == 1);
+            Console.Error.WriteLine("PIPE byte received");
+        });
 
         Console.WriteLine(JsonSerializer.Serialize(new
         {
