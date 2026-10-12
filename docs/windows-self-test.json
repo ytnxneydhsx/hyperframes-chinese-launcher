@@ -1,0 +1,46 @@
+{
+  "version": "1.1.0",
+  "passed": true,
+  "results": [
+    {
+      "name": "native-command-line",
+      "passed": true
+    },
+    {
+      "name": "ipv6-loopback-owner",
+      "passed": true
+    },
+    {
+      "name": "reject-ipv6-wildcard",
+      "passed": true
+    },
+    {
+      "name": "loopback-owner",
+      "passed": true
+    },
+    {
+      "name": "reject-wildcard",
+      "passed": true
+    },
+    {
+      "name": "reject-other-owner",
+      "passed": true
+    },
+    {
+      "name": "reject-wrong-executable",
+      "passed": true
+    },
+    {
+      "name": "page-policy",
+      "passed": true
+    },
+    {
+      "name": "embedded-resources",
+      "passed": true
+    },
+    {
+      "name": "current-user-mutex-pipe",
+      "passed": true
+    }
+  ]
+}

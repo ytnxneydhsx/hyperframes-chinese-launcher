@@ -13,9 +13,11 @@
 
 ## Windows 检查
 
-GitHub Actions 在 Windows runner 执行 `--self-test`：监听端口归属、IPv4/IPv6 回环地址、拒绝通配及其他进程、主进程命令行、页面白名单、资源、当前用户 Mutex / NamedPipe。
+GitHub Actions 在 Windows x64 runner 执行 `--self-test`，10 项检查全部通过：监听端口归属、IPv4/IPv6 回环地址、拒绝通配及其他进程、主进程命令行、页面白名单、资源、当前用户 Mutex / NamedPipe。
 
-手动工作流的 `official_windows` 检查会在一次性 runner 正常安装官方应用，启动本项目、实际注入翻译、运行屏幕外临时 fixture，退出助手后检查英文恢复、原应用仍在运行及原文件哈希。结果须以具体 Actions 执行日志为准，尚未执行的检查不会作为已通过结果。
+`official_windows` 检查已在一次性 Windows x64 runner 验证官方 b313 ZIP（官方 SHA-256 校验通过）：启动本项目、真实 CDP 注入翻译、屏幕外临时 fixture、退出后恢复英文、原应用仍运行、exe 和 app.asar 哈希不变，全部通过。该检查使用保存的非默认应用位置；未覆盖所有安装器及注册表安装环境。
+
+具体证据：[2026-10-12 工作流](https://github.com/ytnxneydhsx/hyperframes-chinese-launcher/actions/runs/38248996457)，代码提交 `c8dba158`。该次工作流的传输检查、Mac Universal 构建和两种 Windows 构建也全部通过。机器可读结果见 [Windows 集成报告](windows-verification.json)、[Windows 原生报告](windows-self-test.json) 和 [Mac 报告](macos-verification.json)。
 
 ## 边界
 

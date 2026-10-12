@@ -1,0 +1,12 @@
+{
+  "realApplicationCdp": true,
+  "launcherVersion": "1.1.0",
+  "passed": true,
+  "originalFilesUnchanged": true,
+  "businessActions": 0,
+  "platform": "Windows",
+  "uiFixture": true,
+  "normalQuitRestoresEnglish": true,
+  "originalApplicationRemainsRunning": true,
+  "officialBuild": "b313"
+}

@@ -76,7 +76,7 @@ Windows 原生自检：
 ./HyperFramesChinese.exe --quit
 ```
 
-GitHub Actions 构建两端程序，运行传输与 Windows 原生检查。手动运行工作流并勾选 `official_windows` 可在一次性 Windows runner 上安装官方应用，验证真实 CDP、隔离 DOM fixture、退出恢复和原文件哈希。该检查不触发业务按钮、不生成视频或登录账号；测试脚本只允许在一次性 GitHub runner 执行。具体证据和边界见 [验证记录](docs/verification.md)。
+GitHub Actions 构建两端程序，运行传输与 Windows 原生检查。手动运行工作流并勾选 `official_windows` 可在一次性 Windows runner 上解压经官方校验的应用，验证真实 CDP、隔离 DOM fixture、退出恢复和原文件哈希。该检查不触发业务按钮、不生成视频或登录账号；测试脚本只允许在一次性 GitHub runner 执行。Mac Apple Silicon 与 Windows x64 的官方应用接入均已通过，具体证据和边界见 [验证记录](docs/verification.md)。
 
 ## 源码与许可
 
