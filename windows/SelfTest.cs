@@ -207,10 +207,11 @@ internal static class SelfTest
             client.ConnectAsync(timeout.Token).GetAwaiter().GetResult();
             wait.GetAwaiter().GetResult();
             Console.Error.WriteLine("PIPE connected");
+            byte[] message = new byte[1];
+            var read = server.ReadExactlyAsync(message.AsMemory(), timeout.Token).AsTask();
             client.WriteAsync(new byte[] { 1 }.AsMemory(), timeout.Token).AsTask().GetAwaiter().GetResult();
             client.FlushAsync(timeout.Token).GetAwaiter().GetResult();
-            byte[] message = new byte[1];
-            server.ReadExactlyAsync(message.AsMemory(), timeout.Token).AsTask().GetAwaiter().GetResult();
+            read.GetAwaiter().GetResult();
             Assert(message[0] == 1);
             Console.Error.WriteLine("PIPE byte received");
         });
