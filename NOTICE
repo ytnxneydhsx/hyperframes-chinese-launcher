@@ -1,0 +1,41 @@
+HyperFrames 中文启动器
+Unofficial Simplified Chinese UI launcher for HyperFrames on macOS
+
+This project is an independent, unofficial project. It is not an official
+HyperFrames or HeyGen release, and does not imply endorsement or affiliation.
+
+Upstream attribution:
+  HyperFrames
+  https://github.com/heygen-com/hyperframes
+  Copyright 2026 HeyGen, Inc.
+  Licensed under the Apache License, Version 2.0.
+
+The Studio dictionary was prepared from publicly available HyperFrames
+source code, including Studio and core audio UI definitions. The desktop
+dictionary was prepared by static inspection of visible UI strings in the
+locally installed official desktop application. The desktop application
+code itself is not included or re-licensed by this project. The audited public source version was 0.8.149; the installed
+desktop version was 0.1.0 with Electron 44.2.0.
+
+Modifications made for this project include Simplified Chinese translations,
+dictionary selection and merging, limited dynamic translation templates,
+and the independent macOS launcher and runtime UI translation mechanism.
+
+This source package and launcher do not bundle the original HyperFrames
+application source code or executable. HyperFrames must be obtained and
+installed separately from its upstream distributor.
+
+The original launcher, translation script, build scripts, documentation,
+and translation contributions in this project are distributed under
+Apache License 2.0. This does not replace rights in third-party source text.
+A copy of the license accompanies this package in LICENSE. Upstream
+attribution notices have been retained here and in the copied license text.
+
+HyperFrames, HeyGen, Framey, and other product names are used solely to
+identify origin, compatibility, or referenced products. All trademarks and
+product names remain the property of their respective owners. Apache License
+2.0 does not grant rights to those trademarks.
+
+Icon attribution: HyperFrames.icns is copied from the installed official
+HyperFrames desktop application. The icon remains the property of its
+original rights holder; the project license does not re-license that asset.

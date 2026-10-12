@@ -1,0 +1,646 @@
+[
+  {
+    "english": "Renders (${renderJobs.length})",
+    "chinese": "渲染 (${renderJobs.length})"
+  },
+  {
+    "english": "Split at playhead (${splitShortcut})",
+    "chinese": "在播放头位置分割 (${splitShortcut})"
+  },
+  {
+    "english": "Timeline tool: ${current.label}",
+    "chinese": "时间线工具：${current.label}"
+  },
+  {
+    "english": "Out of sync with ${partnerName} by ${label} frames",
+    "chinese": "与 ${partnerName} 相差 ${label} 帧"
+  },
+  {
+    "english": "Out of sync with ${partnerName} by ${label}. Click for Move or Slip into Sync",
+    "chinese": "与 ${partnerName} 相差 ${label}。点击可移动或滑移至同步位置"
+  },
+  {
+    "english": "Look: ${label}",
+    "chinese": "风格：${label}"
+  },
+  {
+    "english": "Voice: ${voice}",
+    "chinese": "人声：${voice}"
+  },
+  {
+    "english": "Effects: ${nodeCount} applied",
+    "chinese": "效果：已应用 ${nodeCount} 个"
+  },
+  {
+    "english": "${displayLabel}, ${startLabel} to ${endLabel} seconds",
+    "chinese": "${displayLabel}，${startLabel} 至 ${endLabel} 秒"
+  },
+  {
+    "english": "${el.compositionSrc} • Double-click to open",
+    "chinese": "${el.compositionSrc} • 双击打开"
+  },
+  {
+    "english": "Track${trackDisplaySuffix(displayNumber)}",
+    "chinese": "轨道${trackDisplaySuffix(displayNumber)}"
+  },
+  {
+    "english": "${label} value",
+    "chinese": "${label}数值"
+  },
+  {
+    "english": "Open ${label} effects",
+    "chinese": "打开${label}效果"
+  },
+  {
+    "english": "Select ${label}",
+    "chinese": "选择${label}"
+  },
+  {
+    "english": "${memberCount} tracks",
+    "chinese": "${memberCount} 条轨道"
+  },
+  {
+    "english": "Composition thumbnail failed (${response.status})",
+    "chinese": "合成缩略图加载失败 (${response.status})"
+  },
+  {
+    "english": "Edit ${ease} easing after ${afterLabel}",
+    "chinese": "编辑 ${afterLabel} 之后的 ${ease} 缓动"
+  },
+  {
+    "english": "Edit ${ease} easing",
+    "chinese": "编辑 ${ease} 缓动"
+  },
+  {
+    "english": "Track${trackDisplaySuffix(trackDisplayNumber)}",
+    "chinese": "轨道${trackDisplaySuffix(trackDisplayNumber)}"
+  },
+  {
+    "english": "${range.label} automation",
+    "chinese": "${range.label}自动化"
+  },
+  {
+    "english": "Waveform request failed (${response.status})",
+    "chinese": "波形请求失败 (${response.status})"
+  },
+  {
+    "english": "Audio request failed (${response.status})",
+    "chinese": "音频请求失败 (${response.status})"
+  },
+  {
+    "english": "Previous ${label} keyframe",
+    "chinese": "上一个${label}关键帧"
+  },
+  {
+    "english": "Next ${label} keyframe",
+    "chinese": "下一个${label}关键帧"
+  },
+  {
+    "english": "Show ${label} in the effect rack",
+    "chinese": "在效果架中显示${label}"
+  },
+  {
+    "english": "${alsoAutomatedBy} is also fading this. The two multiply.",
+    "chinese": "${alsoAutomatedBy} 也在控制此项的淡入淡出。两个效果会相乘。"
+  },
+  {
+    "english": "Remove ${label} automation",
+    "chinese": "移除${label}自动化"
+  },
+  {
+    "english": "${group} keyframes",
+    "chinese": "${group}关键帧"
+  },
+  {
+    "english": "Preview volume: ${percentage}%",
+    "chinese": "预览音量：${percentage}%"
+  },
+  {
+    "english": "${clipCount} clips",
+    "chinese": "${clipCount} 个片段"
+  },
+  {
+    "english": "${name}: open, drag to timeline, right-click for actions",
+    "chinese": "${name}：打开、拖到时间线，右键查看更多操作"
+  },
+  {
+    "english": "Pause preview of ${name}",
+    "chinese": "暂停预览 ${name}"
+  },
+  {
+    "english": "Play preview of ${name}",
+    "chinese": "播放预览 ${name}"
+  },
+  {
+    "english": "Open composition ${name}",
+    "chinese": "打开合成 ${name}"
+  },
+  {
+    "english": "${name} preview",
+    "chinese": "${name}预览"
+  },
+  {
+    "english": "Add ${name} to timeline at playhead",
+    "chinese": "将 ${name} 添加到时间线的播放头位置"
+  },
+  {
+    "english": "Render ${name}",
+    "chinese": "渲染 ${name}"
+  },
+  {
+    "english": "Ask agent: ${title}",
+    "chinese": "询问智能体：${title}"
+  },
+  {
+    "english": "${name}: copy path, drag to timeline, right-click for actions",
+    "chinese": "${name}：复制路径、拖到时间线，右键查看更多操作"
+  },
+  {
+    "english": "Actions for ${filename(asset)}",
+    "chinese": "${filename(asset)} 的操作"
+  },
+  {
+    "english": "Rename ${filename(asset)}",
+    "chinese": "重命名 ${filename(asset)}"
+  },
+  {
+    "english": "Couldn't load render history (server error ${res.status}).",
+    "chinese": "无法加载渲染历史（服务器错误 ${res.status}）。"
+  },
+  {
+    "english": "Open ${job.filename} in a new tab",
+    "chinese": "在新选项卡中打开 ${job.filename}"
+  },
+  {
+    "english": "Render progress: ${job.progress}%",
+    "chinese": "渲染进度：${job.progress}%"
+  },
+  {
+    "english": "Download ${job.filename}",
+    "chinese": "下载 ${job.filename}"
+  },
+  {
+    "english": "Delete ${job.filename}",
+    "chinese": "删除 ${job.filename}"
+  },
+  {
+    "english": "${title}. Install it with: ${remedy}",
+    "chinese": "${title}。使用以下命令安装：${remedy}"
+  },
+  {
+    "english": "${title}. Install FFmpeg to export.",
+    "chinese": "${title}。安装 FFmpeg 后即可导出。"
+  },
+  {
+    "english": "${selection.label} image",
+    "chinese": "${selection.label}图片"
+  },
+  {
+    "english": "${selection.label} source",
+    "chinese": "${selection.label}来源"
+  },
+  {
+    "english": "${selection.label} text",
+    "chinese": "${selection.label}文字"
+  },
+  {
+    "english": "${selection.label} color",
+    "chinese": "${selection.label}颜色"
+  },
+  {
+    "english": "${selection.label} background",
+    "chinese": "${selection.label}背景"
+  },
+  {
+    "english": "${selection.label} font",
+    "chinese": "${selection.label}字体"
+  },
+  {
+    "english": "Include ${scene.label} as main-line slide",
+    "chinese": "将 ${scene.label} 添加为主线幻灯片"
+  },
+  {
+    "english": "Mark ${currentTime.toFixed(2)}s as hold-point",
+    "chinese": "将 ${currentTime.toFixed(2)} 秒标记为停留点"
+  },
+  {
+    "english": "Remove fragment at ${t.toFixed(2)}s",
+    "chinese": "移除 ${t.toFixed(2)} 秒处的片段"
+  },
+  {
+    "english": "Rename branch ${seq.label}",
+    "chinese": "重命名分支 ${seq.label}"
+  },
+  {
+    "english": "Delete branch ${seq.label}",
+    "chinese": "删除分支 ${seq.label}"
+  },
+  {
+    "english": "Assign ${scene.label || scene.id} to branch ${seq.label}",
+    "chinese": "将 ${scene.label || scene.id} 分配到分支 ${seq.label}"
+  },
+  {
+    "english": "Remove hotspot ${h.label}",
+    "chinese": "移除热点 ${h.label}"
+  },
+  {
+    "english": "Preview: ${name}",
+    "chinese": "预览：${name}"
+  },
+  {
+    "english": "${strip.label} level",
+    "chinese": "${strip.label}电平"
+  },
+  {
+    "english": "${strip.label} volume",
+    "chinese": "${strip.label}音量"
+  },
+  {
+    "english": "${param.label} color",
+    "chinese": "${param.label}颜色"
+  },
+  {
+    "english": "${param.label} value",
+    "chinese": "${param.label}数值"
+  },
+  {
+    "english": "Sets ${profile.derives.length} settings at once. Open Details to see where they land.",
+    "chinese": "一次设置 ${profile.derives.length} 项参数。展开详情可查看应用位置。"
+  },
+  {
+    "english": "Crop ${edge}",
+    "chinese": "裁剪${edge}"
+  },
+  {
+    "english": "Automate ${label}",
+    "chinese": "为${label}添加自动化"
+  },
+  {
+    "english": "Previous ${property} keyframe",
+    "chinese": "上一个${property}关键帧"
+  },
+  {
+    "english": "Convert ${property} to keyframes",
+    "chinese": "将${property}转换为关键帧"
+  },
+  {
+    "english": "Next ${property} keyframe",
+    "chinese": "下一个${property}关键帧"
+  },
+  {
+    "english": "Copied element info for ${element.label}. Paste it into any AI agent",
+    "chinese": "已复制 ${element.label} 的元素信息。可粘贴给 AI 智能体"
+  },
+  {
+    "english": "${tab.label} curve",
+    "chinese": "${tab.label}曲线"
+  },
+  {
+    "english": "Reset ${label}",
+    "chinese": "重置${label}"
+  },
+  {
+    "english": "${label} color",
+    "chinese": "${label}颜色"
+  },
+  {
+    "english": "${label} level",
+    "chinese": "${label}电平"
+  },
+  {
+    "english": "${url} returned no font list",
+    "chinese": "${url} 未返回字体列表"
+  },
+  {
+    "english": "Stop ${index + 1} position",
+    "chinese": "色标 ${index + 1} 的位置"
+  },
+  {
+    "english": "Stop ${index + 1}",
+    "chinese": "色标 ${index + 1}"
+  },
+  {
+    "english": "Remove stop ${index + 1}",
+    "chinese": "移除色标 ${index + 1}"
+  },
+  {
+    "english": "Decrease ${label}",
+    "chinese": "减小${label}"
+  },
+  {
+    "english": "Increase ${label}",
+    "chinese": "增大${label}"
+  },
+  {
+    "english": "Select off-canvas element ${r.key}",
+    "chinese": "选择画布外元素 ${r.key}"
+  },
+  {
+    "english": "Off-canvas: ${r.key}. Click to select",
+    "chinese": "画布外：${r.key}。点击选择"
+  },
+  {
+    "english": "Y values must be between ${BEZIER_Y_MIN} and ${BEZIER_Y_MAX}",
+    "chinese": "Y 值必须介于 ${BEZIER_Y_MIN} 和 ${BEZIER_Y_MAX} 之间"
+  },
+  {
+    "english": "${blocked?.label} can't be moved.",
+    "chinese": "${blocked?.label} 无法移动。"
+  },
+  {
+    "english": "Add ${effect.label}",
+    "chinese": "添加${effect.label}"
+  },
+  {
+    "english": "Remove ${effect.label}",
+    "chinese": "移除${effect.label}"
+  },
+  {
+    "english": "Use ${preset.label} palette",
+    "chinese": "使用${preset.label}调色板"
+  },
+  {
+    "english": "Palette color ${index + 1}",
+    "chinese": "调色板颜色 ${index + 1}"
+  },
+  {
+    "english": "Remove palette color ${index + 1}",
+    "chinese": "移除调色板颜色 ${index + 1}"
+  },
+  {
+    "english": "Reset ${selectedEffect.label}",
+    "chinese": "重置${selectedEffect.label}"
+  },
+  {
+    "english": "Remove ${selectedEffect.label}",
+    "chinese": "移除${selectedEffect.label}"
+  },
+  {
+    "english": "Preview ${effect.label}",
+    "chinese": "预览${effect.label}"
+  },
+  {
+    "english": "Add ${method} animation",
+    "chinese": "添加 ${method} 动画"
+  },
+  {
+    "english": "${label} color picker",
+    "chinese": "${label}颜色选择器"
+  },
+  {
+    "english": "Pick ${label.toLowerCase()} color",
+    "chinese": "选择${label.toLowerCase()}颜色"
+  },
+  {
+    "english": "Fade ${edge}",
+    "chinese": "${edge}淡化"
+  },
+  {
+    "english": "into ${owner.label}",
+    "chinese": "进入${owner.label}"
+  },
+  {
+    "english": "Text ${childIdx + 1}",
+    "chinese": "文字 ${childIdx + 1}"
+  },
+  {
+    "english": "Selection resolves to ${selection.label}",
+    "chinese": "所选项对应 ${selection.label}"
+  },
+  {
+    "english": "Reset ${tab.label} curve",
+    "chinese": "重置${tab.label}曲线"
+  },
+  {
+    "english": "Preview ${label}",
+    "chinese": "预览${label}"
+  },
+  {
+    "english": "Make room for ${o.label}",
+    "chinese": "避让${o.label}"
+  },
+  {
+    "english": "${label} min",
+    "chinese": "${label}最小值"
+  },
+  {
+    "english": "${label} max",
+    "chinese": "${label}最大值"
+  },
+  {
+    "english": "${label} softness",
+    "chinese": "${label}柔和度"
+  },
+  {
+    "english": "${MODE_LABELS[kind]} ease presets",
+    "chinese": "${MODE_LABELS[kind]}缓动预设"
+  },
+  {
+    "english": "${slider.label} settings",
+    "chinese": "${slider.label}设置"
+  },
+  {
+    "english": "Bound to variable \"${promote.boundId}\"",
+    "chinese": "已绑定变量 \"${promote.boundId}\""
+  },
+  {
+    "english": "Add ${overlay.title}",
+    "chinese": "添加${overlay.title}"
+  },
+  {
+    "english": "Show what ${preset.label} contains",
+    "chinese": "查看${preset.label}包含的效果"
+  },
+  {
+    "english": "Hide ${preset.label}'s effects",
+    "chinese": "隐藏${preset.label}的效果"
+  },
+  {
+    "english": "Switch ${preset.label} off",
+    "chinese": "关闭${preset.label}"
+  },
+  {
+    "english": "Switch ${preset.label} back on",
+    "chinese": "重新开启${preset.label}"
+  },
+  {
+    "english": "Remove ${preset.label}",
+    "chinese": "移除${preset.label}"
+  },
+  {
+    "english": "Close ${title}",
+    "chinese": "关闭${title}"
+  },
+  {
+    "english": "${selectedSegmentIds.size} words",
+    "chinese": "${selectedSegmentIds.size} 个词"
+  },
+  {
+    "english": "Caption word \"${seg.text}\"",
+    "chinese": "字幕词 \"${seg.text}\""
+  },
+  {
+    "english": "${label} preset",
+    "chinese": "${label}预设"
+  },
+  {
+    "english": "${label} duration",
+    "chinese": "${label}时长"
+  },
+  {
+    "english": "${label} ease",
+    "chinese": "${label}缓动"
+  },
+  {
+    "english": "${label} stagger",
+    "chinese": "${label}错开时间"
+  },
+  {
+    "english": "${label} intensity",
+    "chinese": "${label}强度"
+  },
+  {
+    "english": "Up ${n(p.gain)} dB",
+    "chinese": "提升 ${n(p.gain)} dB"
+  },
+  {
+    "english": "Down ${Math.abs(n(p.gain))} dB",
+    "chinese": "降低 ${Math.abs(n(p.gain))} dB"
+  },
+  {
+    "english": "Cutting everything below ${hz(p.frequency)}",
+    "chinese": "切除 ${hz(p.frequency)} 以下的所有声音"
+  },
+  {
+    "english": "Muffled above ${hz(p.frequency)}",
+    "chinese": "柔化 ${hz(p.frequency)} 以上的声音"
+  },
+  {
+    "english": "Sitting on ${hz(p.frequency)}, doing nothing yet",
+    "chinese": "位于 ${hz(p.frequency)}，尚未生效"
+  },
+  {
+    "english": "Peaks pulled down toward ${n(p.limit, -1)} dB",
+    "chinese": "将峰值压低至 ${n(p.limit, -1)} dB 附近"
+  },
+  {
+    "english": "Peaks pulled down toward ${n(p.ceiling, -1)} dBTP",
+    "chinese": "将峰值压低至 ${n(p.ceiling, -1)} dBTP 附近"
+  },
+  {
+    "english": "Closing gaps quieter than ${n(p.threshold, -45)} dB",
+    "chinese": "将低于 ${n(p.threshold, -45)} dB 的间隙静音"
+  },
+  {
+    "english": "Crushed to ${n(p.bits, 8)} bits",
+    "chinese": "位深降至 ${n(p.bits, 8)} bits"
+  },
+  {
+    "english": "Echo every ${n(p.time, 250)} ms",
+    "chinese": "每 ${n(p.time, 250)} ms 产生一次回声"
+  },
+  {
+    "english": "lifting quiet parts up to ${lift.toFixed(1)} dB",
+    "chinese": "将安静部分最多提升 ${lift.toFixed(1)} dB"
+  },
+  {
+    "english": "holding loud parts down ${Math.abs(cut).toFixed(1)} dB",
+    "chinese": "将响亮部分降低 ${Math.abs(cut).toFixed(1)} dB"
+  },
+  {
+    "english": "Renders (${count})",
+    "chinese": "渲染 (${count})"
+  },
+  {
+    "english": "Import projects (${count})",
+    "chinese": "导入项目 (${count})"
+  },
+  {
+    "english": "Import these ${count} projects",
+    "chinese": "导入这 ${count} 个项目"
+  },
+  {
+    "english": "Model: ${model}",
+    "chinese": "模型：${model}",
+    "attributesOnly": true
+  },
+  {
+    "english": "Harness: ${agent}",
+    "chinese": "运行框架：${agent}",
+    "attributesOnly": true
+  },
+  {
+    "english": "Effort: ${effort}",
+    "chinese": "推理强度：${effort}",
+    "attributesOnly": true
+  },
+  {
+    "english": "Agent: ${agent}",
+    "chinese": "智能体：${agent}",
+    "attributesOnly": true
+  },
+  {
+    "english": "Preview ${name}",
+    "chinese": "预览 ${name}",
+    "attributesOnly": true
+  },
+  {
+    "english": "Play ${name}",
+    "chinese": "播放 ${name}",
+    "attributesOnly": true
+  },
+  {
+    "english": "Convert ${name}",
+    "chinese": "转换 ${name}",
+    "attributesOnly": true
+  },
+  {
+    "english": "Rename project: ${name}",
+    "chinese": "重命名项目：${name}",
+    "attributesOnly": true
+  },
+  {
+    "english": "${agent} is connected",
+    "chinese": "${agent} 已连接"
+  },
+  {
+    "english": "Connect ${agent}",
+    "chinese": "连接 ${agent}"
+  },
+  {
+    "english": "Installing ${agent}",
+    "chinese": "正在安装 ${agent}"
+  },
+  {
+    "english": "Updating ${agent}",
+    "chinese": "正在更新 ${agent}"
+  },
+  {
+    "english": "Framey makes your videos with ${agent} on this computer. Set it up once.",
+    "chinese": "Framey 会在这台电脑上使用 ${agent} 制作视频。只需设置一次。"
+  },
+  {
+    "english": "System follows your ${computer}'s light or dark setting.",
+    "chinese": "跟随这台 ${computer} 的浅色或深色设置。"
+  },
+  {
+    "english": "Framey shows what it is doing and tells you when a video is ready or needs you. Off, ${notice} does.",
+    "chinese": "Framey 会显示工作状态，并在视频就绪或需要你操作时通知你。关闭后由 ${notice} 通知。"
+  },
+  {
+    "english": "Downloading the video… ${received} of ${total}",
+    "chinese": "正在下载视频… ${received} / ${total}"
+  },
+  {
+    "english": "Getting the transcription model, ${received} of ${total} MB",
+    "chinese": "正在获取转写模型，${received} / ${total} MB"
+  },
+  {
+    "english": "Preparing transcript · ${percent}%",
+    "chinese": "正在准备转写 · ${percent}%"
+  },
+  {
+    "english": "Switch to ${theme} theme",
+    "chinese": "切换到 ${theme} 主题"
+  }
+]

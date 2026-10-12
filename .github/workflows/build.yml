@@ -1,0 +1,76 @@
+name: Build and verify
+on:
+  push:
+    branches: [main]
+    tags: ['v*']
+  pull_request:
+  workflow_dispatch:
+    inputs:
+      official_windows:
+        description: Verify against the official app on a disposable Windows runner
+        type: boolean
+        default: false
+permissions:
+  contents: read
+jobs:
+  transport:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+      - uses: actions/setup-dotnet@v6
+        with:
+          global-json-file: global.json
+      - run: node --check shared/resources/translator.js
+      - run: python3 scripts/merge-translations.py && git diff --exit-code shared/resources audit/dictionary-counts.json
+      - run: dotnet run --project tests/TransportTests/TransportTests.csproj -c Release
+  macos:
+    runs-on: macos-15
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+      - run: bash macos/build.sh
+      - run: codesign --verify --strict "dist/macos/HyperFrames中文启动器.app"
+      - uses: actions/upload-artifact@v7
+        with:
+          name: macos-universal
+          path: dist/macos
+  windows:
+    runs-on: windows-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        runtime: [win-x64, win-arm64]
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+      - uses: actions/setup-dotnet@v6
+        with:
+          global-json-file: global.json
+      - shell: pwsh
+        run: ./windows/build.ps1 -Runtime '${{ matrix.runtime }}'
+      - name: Native Windows self-test
+        if: matrix.runtime == 'win-x64'
+        shell: pwsh
+        run: |
+          $p = Start-Process ./dist/windows/win-x64/HyperFramesChinese.exe -ArgumentList '--self-test' -Wait -PassThru -RedirectStandardOutput self-test.json
+          Get-Content self-test.json
+          if ($p.ExitCode -ne 0) { throw 'Native self-test failed' }
+      - name: Official Windows app integration
+        if: matrix.runtime == 'win-x64' && github.event_name == 'workflow_dispatch' && inputs.official_windows
+        shell: pwsh
+        run: ./tests/windows-integration.ps1 -Launcher ./dist/windows/win-x64/HyperFramesChinese.exe
+      - uses: actions/upload-artifact@v7
+        with:
+          name: windows-${{ matrix.runtime }}
+          path: dist/windows/${{ matrix.runtime }}
+      - uses: actions/upload-artifact@v7
+        if: matrix.runtime == 'win-x64'
+        with:
+          name: windows-verification
+          path: |
+            self-test.json
+            dist/verification

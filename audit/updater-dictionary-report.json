@@ -1,0 +1,32 @@
+{
+  "scope": "main-process updater messages displayed in the desktop renderer",
+  "sources": [
+    "main/updateFailure.mjs",
+    "main/updater.mjs",
+    "renderer/desktop-static/index-D0Ttr0Tl.js"
+  ],
+  "englishToChinese": {
+    "Update check failed. Try again.": "检查更新失败，请重试。",
+    "Download failed. Check your connection.": "下载失败，请检查网络连接。",
+    "Download damaged. Try again.": "下载文件已损坏，请重试。",
+    "Signature check failed. Download instead.": "签名检查失败，请直接下载安装包。",
+    "macOS verification failed. Download instead.": "macOS 验证失败，请直接下载安装包。",
+    "Wrong Mac build. Download instead.": "安装包与这台 Mac 不兼容，请直接下载正确的安装包。",
+    "Wrong app downloaded. Download instead.": "下载的应用不正确，请直接下载安装包。",
+    "Wrong version downloaded. Try again.": "下载的版本不正确，请重试。",
+    "Could not unpack the update. Try again.": "无法解压更新，请重试。",
+    "Disk full. Free space and try again.": "磁盘空间不足，请释放空间后重试。",
+    "Cannot replace this app. Download instead.": "无法替换当前应用，请直接下载安装包。",
+    "There is no .deb of the newest version to download yet.": "最新版本暂未提供可下载的 .deb 安装包。",
+    "The update didn't finish.": "更新未完成。",
+    "Permission denied. Try again.": "权限不足，请重试。",
+    "Could not check for updates. Check your connection and try again.": "无法检查更新，请检查网络连接后重试。",
+    "Updates are not available in this build.": "此构建不提供自动更新。",
+    "Open the download and run Install HyperFrames; it replaces this copy, and nothing in your projects is lost.": "打开下载的安装包并运行 Install HyperFrames，即可替换当前应用，项目内容会保留。"
+  },
+  "reason": "These messages are emitted by the updater; they are not ordinary renderer literals.",
+  "windows_sources": [
+    "shared/platformWords.mjs",
+    "main/updateFailure.mjs"
+  ]
+}

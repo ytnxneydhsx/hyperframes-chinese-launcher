@@ -1,0 +1,824 @@
+{
+  "app": "HyperFrames Desktop",
+  "app_version": "0.1.0",
+  "language": "zh-CN",
+  "dictionary": "resources/desktop.zh-CN.json",
+  "audit_mode": "static-only; no app launch, browser operation, installation, network request or business data created by this sub-agent",
+  "scope": [
+    "desktop home/onboarding",
+    "project sidebar and search/import/archive",
+    "Settings sections and descriptions",
+    "account and HeyGen API key",
+    "Agent/model/effort connection controls",
+    "media/file/caption/editor tools",
+    "export/share/download",
+    "dialogs/errors/tooltips",
+    "presence/Framey text",
+    "shared player audio effect controls"
+  ],
+  "stats": {
+    "dictionary_entries": 1117,
+    "index_primary_prop_candidates": 752,
+    "primary_candidates_in_dictionary": 713,
+    "primary_candidates_intentionally_unmapped": 39,
+    "unmapped_primary_candidates": [
+      "--json",
+      "1080p",
+      "4K",
+      "A voice clone",
+      "A-roll Cuts",
+      "Aa",
+      "B",
+      "Claude Code",
+      "Claude Desktop",
+      "Claude edited this",
+      "Codex",
+      "Comment AGENTS",
+      "E",
+      "Esc",
+      "F",
+      "Framey",
+      "HeyGen Video 1",
+      "HyperFrames",
+      "In a data center",
+      "Keep the jump cut at the start, make the ending punchier…",
+      "MOV",
+      "MP4",
+      "MP4, MOV or WebM",
+      "One line to Claude Code",
+      "One photo",
+      "Our new running shoe, for people training for their first 10K",
+      "P",
+      "Pi",
+      "Tab",
+      "The edit as code",
+      "The quote",
+      "Viral Clone",
+      "WebM",
+      "esc",
+      "npx hyperframes init",
+      "pi",
+      "w-[46px] shrink-0",
+      "yourbrand.com",
+      "yoursite.com"
+    ],
+    "source_presence_missing_keys": [],
+    "same_source_and_translation_keys": [
+      "Agent"
+    ],
+    "note": "Candidate statistics are conservative regex counts, not a complete locale coverage percentage. Shared bundle presence does not imply every Studio component is reachable in Desktop.",
+    "literal_dictionary_keys_not_found_in_source": [
+      "See the projects on your Mac that aren't in HyperFrames yet, and import them",
+      "See the projects on your PC that aren't in HyperFrames yet, and import them",
+      "Show Motion graphics",
+      "Show Shaders",
+      "Show Mobile Ads"
+    ],
+    "source_presence_verification": "Every literal key occurs in extracted sources; remaining keys are bounded expansions of actual UI templates and actual platform/category labels, listed in proven_rendered_variants."
+  },
+  "sources": [
+    {
+      "file": "module.no-external-BJnIUSpd.js",
+      "size_bytes": 194829,
+      "sha256": "35a2d99a1e0dda1fb8b814a07fe66ee3978afa7ff6ae02579aa50a7e5ad177d0",
+      "static_prop_candidates": 7,
+      "dictionary_keys_occurring_in_source": 66,
+      "candidate_scan_method": "Conservative regex scan of static React text and accessibility props; presence is not proof that every shared Studio component is reachable in Desktop."
+    },
+    {
+      "file": "bannerFrame-B71UE_CG.js",
+      "size_bytes": 476,
+      "sha256": "066e852cffbe76f326280dfe4e2a8a65b2050deba0989317c263bc0f414f7679",
+      "static_prop_candidates": 0,
+      "dictionary_keys_occurring_in_source": 1,
+      "candidate_scan_method": "Conservative regex scan of static React text and accessibility props; presence is not proof that every shared Studio component is reachable in Desktop."
+    },
+    {
+      "file": "still-B3ZcWiOI.js",
+      "size_bytes": 515,
+      "sha256": "1e8830b4d7e3572509e98c617bdb4a4d5826a6eaec96e1217873aaeea07794e2",
+      "static_prop_candidates": 0,
+      "dictionary_keys_occurring_in_source": 4,
+      "candidate_scan_method": "Conservative regex scan of static React text and accessibility props; presence is not proof that every shared Studio component is reachable in Desktop."
+    },
+    {
+      "file": "dist-BIj1kodE.js",
+      "size_bytes": 209158,
+      "sha256": "255cb37d95497a5e898bc21431b64473d534e772d58296bd72c6d4880ae83cab",
+      "static_prop_candidates": 4,
+      "dictionary_keys_occurring_in_source": 57,
+      "candidate_scan_method": "Conservative regex scan of static React text and accessibility props; presence is not proof that every shared Studio component is reachable in Desktop."
+    },
+    {
+      "file": "index-D0Ttr0Tl.js",
+      "size_bytes": 1651124,
+      "sha256": "86c3106d76eeb437e0518b0e76a8f93093bf70e8fba52b2b54894097c745a03e",
+      "static_prop_candidates": 796,
+      "dictionary_keys_occurring_in_source": 965,
+      "candidate_scan_method": "Conservative regex scan of static React text and accessibility props; presence is not proof that every shared Studio component is reachable in Desktop."
+    },
+    {
+      "file": "domEditingLayers-SMVA3FEW-DhAmNLE6.js",
+      "size_bytes": 76,
+      "sha256": "10a83df5ad09cace20daac876b526667392941375c8a2719be84b642093c3a47",
+      "static_prop_candidates": 0,
+      "dictionary_keys_occurring_in_source": 3,
+      "candidate_scan_method": "Conservative regex scan of static React text and accessibility props; presence is not proof that every shared Studio component is reachable in Desktop."
+    },
+    {
+      "file": "posthog-recorder-DPhe9CR2.js",
+      "size_bytes": 140009,
+      "sha256": "b3a7188b8261f65c8dff48d76d8c33a436a88ffaf197415a083a85acb0de6321",
+      "static_prop_candidates": 0,
+      "dictionary_keys_occurring_in_source": 59,
+      "candidate_scan_method": "Conservative regex scan of static React text and accessibility props; presence is not proof that every shared Studio component is reachable in Desktop."
+    },
+    {
+      "file": "src-CSR3sU3u.js",
+      "size_bytes": 5401758,
+      "sha256": "4aa26d0e9c5e688defb9c7ab45c57fbbd091fa0362b37cb8f954377a123f34f4",
+      "static_prop_candidates": 1454,
+      "dictionary_keys_occurring_in_source": 424,
+      "candidate_scan_method": "Conservative regex scan of static React text and accessibility props; presence is not proof that every shared Studio component is reachable in Desktop."
+    },
+    {
+      "file": "hyperframes-player-CosJwuKl.js",
+      "size_bytes": 106893,
+      "sha256": "96f38c3613d9290e2c447c354e7177ca96aa8e8fe488c57cf0001eae5d44bc3f",
+      "static_prop_candidates": 88,
+      "dictionary_keys_occurring_in_source": 145,
+      "candidate_scan_method": "Conservative regex scan of static React text and accessibility props; presence is not proof that every shared Studio component is reachable in Desktop."
+    },
+    {
+      "file": "catalogPlayer-BqM4adLc.js",
+      "size_bytes": 2570,
+      "sha256": "81c1ca64fe5ddbfdba2fa704edc94dbb5a5bac53c059a87a9204d4f15724308e",
+      "static_prop_candidates": 0,
+      "dictionary_keys_occurring_in_source": 5,
+      "candidate_scan_method": "Conservative regex scan of static React text and accessibility props; presence is not proof that every shared Studio component is reachable in Desktop."
+    },
+    {
+      "file": "src-CPQFAD4p.js",
+      "size_bytes": 666631,
+      "sha256": "81326124733389a758e82219b35bd032633d627f9ceb7355df675ad0583a439a",
+      "static_prop_candidates": 2,
+      "dictionary_keys_occurring_in_source": 91,
+      "candidate_scan_method": "Conservative regex scan of static React text and accessibility props; presence is not proof that every shared Studio component is reachable in Desktop."
+    },
+    {
+      "file": "lib-DlEuZBGC.js",
+      "size_bytes": 1401,
+      "sha256": "9a94eb1ce73b70f083016cfc38590d830cd68486b0498e351b92a92385d8bc61",
+      "static_prop_candidates": 0,
+      "dictionary_keys_occurring_in_source": 6,
+      "candidate_scan_method": "Conservative regex scan of static React text and accessibility props; presence is not proof that every shared Studio component is reachable in Desktop."
+    },
+    {
+      "file": "presence-CT6Gt58T.js",
+      "size_bytes": 14327,
+      "sha256": "185590df5b577dbc453bade7cc501720560ba300d441929f9d696d8db2f7d998",
+      "static_prop_candidates": 16,
+      "dictionary_keys_occurring_in_source": 40,
+      "candidate_scan_method": "Conservative regex scan of static React text and accessibility props; presence is not proof that every shared Studio component is reachable in Desktop."
+    },
+    {
+      "file": "rolldown-runtime-B0Z9INg1.js",
+      "size_bytes": 901,
+      "sha256": "5e9b0d884d2ebb14e241ab38b43e41efb61bce2e74d71507b0b95b264fba4047",
+      "static_prop_candidates": 0,
+      "dictionary_keys_occurring_in_source": 1,
+      "candidate_scan_method": "Conservative regex scan of static React text and accessibility props; presence is not proof that every shared Studio component is reachable in Desktop."
+    }
+  ],
+  "preserve_literals": [
+    "HyperFrames",
+    "Framey",
+    "HeyGen",
+    "Discord",
+    "Claude",
+    "Claude Code",
+    "Claude Desktop",
+    "Codex",
+    "Grok",
+    "Antigravity",
+    "Hermes Agent",
+    "OpenClaw",
+    "Pi",
+    "model IDs and provider IDs",
+    "package identifiers and runtime values",
+    "API keys/tokens/account emails",
+    "filesystem paths and URLs",
+    "CLI commands/code",
+    "video/media example titles and sample scripts",
+    "user project/file/media names",
+    "user/agent/reviewer authored text",
+    "file format symbols MP4/MOV/WebM, 1080p/4K, keyboard shortcut keys"
+  ],
+  "runtime_recommendations": {
+    "translation_match": "Exact dictionary match only; do not apply word replacement to arbitrary sentences. Only mutate app-owned text nodes/title/placeholder. Keep leading/trailing whitespace and embedded newlines. Keep counts/file names/model IDs unchanged in known anchored dynamic patterns.",
+    "react_safety": "Do not assign innerHTML or parent textContent. Mutate a text node only after its protected-content ancestors are checked. Preserve DOM structure, SVG icons, values, event handlers and data attributes. Do not collapse nested buttons or spans.",
+    "observe": "MutationObserver can translate newly rendered app-owned static nodes. Ignore own writes and remember original English when React rerenders or language changes.",
+    "aria_compatibility": "Root decided to preserve every aria-label in English. Bundle uses document.querySelector(`[aria-label=\"New project\"]`) and button[aria-label^=\"Actions for \"] for focus restoration. Translating these can break keyboard/dialog behavior; other unknown machine selectors may exist. Visible UI/title/placeholder remains translated, accessibility labels intentionally retain English.",
+    "protected_selector_caveat": "Do not skip the entire [data-chat-thread], .session-project-row or [data-wall-name] subtree: they also contain static app controls. Skip exact user-body/name descendants and preserve data attribute values. The read-only .cm-placeholder UI can remain eligible while .cm-content/live editor data is protected.",
+    "brand_names": "Do not map a brand to a translated identity. Agent is an explicit UI label retained as Agent."
+  },
+  "protected_content_selectors": [
+    {
+      "selector": "[contenteditable=\"true\"], [contenteditable=\"\"], .cm-content, .cm-line",
+      "reason": "User-authored prompt/editor input. Do not mutate text or editor transaction state. Keep app-owned .cm-placeholder translation as a narrowly allowed exception.",
+      "verified": "contenteditable guard and .cm-editor references in desktop index; CodeMirror is in shared bundle"
+    },
+    {
+      "selector": "[data-sent-words], [data-sent-pills], [data-sent-files], [data-sent-file-pill], [data-sent-moment-pill], [data-sent-moment], [data-sent-reference]",
+      "reason": "User messages, attached file labels and submitted references.",
+      "verified": "desktop index"
+    },
+    {
+      "selector": "[data-run-prose=\"text\"], [data-thinking-body], [data-reply-answer], [data-external-transcript], [data-answered-questions]",
+      "reason": "Agent prose, reasoning, replies, external sessions and user answers. Preserve all user/agent-authored content.",
+      "verified": "desktop index"
+    },
+    {
+      "selector": ".pe-req, .pe-where, [data-reply-code], [data-reply-quote], pre, code",
+      "reason": "Prompt edits, request notes, timeline location strings and code. .pe-req includes some app-generated wording; skipping it prioritizes user-content preservation.",
+      "verified": "desktop index; pre/code are generic defensive exclusions"
+    },
+    {
+      "selector": ".session-title, [data-project-name], [data-row-name], [data-peek-title], [data-template-name], [data-tile-description], [data-line-title]",
+      "reason": "User project names, media names, descriptions and imported composition titles. Root can skip project-button attributes when it contains .session-title. Preserve data-wall-name attribute values without excluding its entire subtree.",
+      "verified": "desktop index"
+    },
+    {
+      "selector": ".prompt-pill .nm, [data-attach-path] .nm, [data-shelf-item] .nm",
+      "reason": "Names in reference pills and file attachments. Validate .nm parent context before applying broad exclusions.",
+      "verified": ".prompt-pill .nm and [data-attach-path] in desktop index; shelf .nm composition is a recommendation"
+    },
+    {
+      "selector": "iframe, video, audio, canvas, svg, [data-preview-doc], [data-preview-tab] iframe",
+      "reason": "Video frames, preview documents, media and drawing assets. UI raster/video content should remain unchanged.",
+      "verified": "desktop index preview/media usage; generic media exclusions"
+    },
+    {
+      "selector": "[data-review-thread] [data-reply-answer], [data-review-thread] [data-thread-reply]",
+      "reason": "Reviewers comments and replies. Do not skip the whole review row: its Accept/Reply/Reopen controls are app UI.",
+      "verified": "review rows and response/reply attributes in desktop index; exact body nesting should be verified by Root"
+    },
+    {
+      "selector": "input, textarea",
+      "reason": "Preserve live values/default values. Translate only approved placeholders/title, never input value, account email, API key, code or file path.",
+      "verified": "desktop index form fields"
+    }
+  ],
+  "dynamic_patterns": [
+    {
+      "source_template": "All projects (${i})",
+      "source_fragment": "All projects (",
+      "translation": "所有项目 (${i})",
+      "scope": "sidebar button text",
+      "preserve": "number and closing parenthesis; exact fragment now in dictionary"
+    },
+    {
+      "source_template": "Import projects (${i})",
+      "translation": "导入项目 (${i})",
+      "scope": "sidebar button text",
+      "preserve": "number"
+    },
+    {
+      "source_template": "Import these ${i} projects",
+      "translation": "导入这 ${i} 个项目",
+      "scope": "import dialog; source starts with separate fragment Import these ",
+      "preserve": "count; exact final wording must match current DOM"
+    },
+    {
+      "source_template": "Key ending in ${last4}",
+      "source_fragment": "Key ending in ",
+      "translation": "密钥末尾为 ${last4}",
+      "scope": "saved HeyGen key card",
+      "preserve": "only last four displayed chars; fragment in dictionary"
+    },
+    {
+      "source_template": "$${t} API balance / ${t} API credits",
+      "translation": "$${t} API 余额 / ${t} API 额度",
+      "scope": "[data-heygen-key=\"saved\"] balance line",
+      "preserve": "amount, currency and any account email"
+    },
+    {
+      "source_template": "Harness: ${d}",
+      "translation": "Agent 运行框架：${d}",
+      "scope": "title only",
+      "preserve": "agent label"
+    },
+    {
+      "source_template": "Model: ${Jh(s,c)}",
+      "translation": "模型：${Jh(s,c)}",
+      "scope": "title only",
+      "preserve": "exact model label or model ID"
+    },
+    {
+      "source_template": "Effort: ${o.effort??…}",
+      "translation": "推理强度：${effort}",
+      "scope": "title only",
+      "preserve": "literal effort if unknown; never change underlying value"
+    },
+    {
+      "source_template": "Agent: ${e.summary}",
+      "translation": "Agent：${e.summary}",
+      "scope": "title only",
+      "preserve": "summary/agent name"
+    },
+    {
+      "source_template": "Preview ${e.name}; Open ${e.name}; Play ${e.name}; Convert ${e.name}",
+      "translation": "预览/打开/播放/转换 ${name}",
+      "scope": "app-owned title only",
+      "preserve": "file/media name; do not globally match user prose"
+    },
+    {
+      "source_template": "Rename project: ${e.name}; Archive ${e.name}; Actions for ${e.name}",
+      "translation": "重命名项目/归档/操作 ${name}",
+      "scope": "project actions title only",
+      "preserve": "project name and original aria-label"
+    },
+    {
+      "source_template": "${t} is connected; Connect ${t}; Installing ${i}; Updating ${e}",
+      "translation": "${name} 已连接；连接/正在安装/正在更新 ${name}",
+      "scope": "Agent installer and title",
+      "preserve": "agent names"
+    },
+    {
+      "source_template": "Framey makes your videos with ${t} on this computer. Set it up once.",
+      "translation": "Framey 会在这台电脑上使用 ${t} 制作视频。只需设置一次。",
+      "scope": "Agent connection sheet",
+      "preserve": "agent label"
+    },
+    {
+      "source_template": "${e.name} is on",
+      "translation": "${e.name} 已开启",
+      "scope": "settings permission status",
+      "preserve": "application/platform display name"
+    },
+    {
+      "source_template": "${count} things need you",
+      "translation": "有 ${count} 项需要处理",
+      "scope": "permissions status only",
+      "preserve": "count; inspect exact current rendered count phrase"
+    },
+    {
+      "source_template": "System follows your ${E().computer}'s light or dark setting.",
+      "translation": "跟随这台 ${computer} 的浅色或深色设置。",
+      "scope": "Appearance System description",
+      "preserve": "Mac/PC platform brand"
+    },
+    {
+      "source_template": "Framey shows what it is doing and tells you when a video is ready or needs you. Off, ${E().notice} does.",
+      "translation": "Framey 会显示工作状态，并在视频就绪或需要你操作时通知你。关闭后由 ${notice} 通知。",
+      "scope": "Framey settings description",
+      "preserve": "platform-specific notification phrasing"
+    },
+    {
+      "source_template": "HyperFrames is open source under ${T9.license}. It includes FFmpeg, under the GNU GPL.${driverSuffix}",
+      "translation": "HyperFrames 以 ${license} 开源。它包含采用 GNU GPL 的 FFmpeg。${driverSuffix}",
+      "scope": "General open-source description",
+      "preserve": "license identifiers and optional Driver/MIT suffix"
+    },
+    {
+      "source_template": "Full access, the default: ${agent} can install, use the internet and run anything, with no checks. Auto: it works in your project and blocks risky steps on its own.",
+      "translation": "默认的“完全访问”：${agent} 可安装软件、访问互联网并执行任意操作，无需检查。“自动”：在项目中工作，并自行拦截高风险步骤。",
+      "scope": "Agent access description",
+      "preserve": "Claude Code / Claude Code or Codex"
+    },
+    {
+      "source_template": "Text reads at ${contrast}:1 on this background. Body text needs ${required}:1.",
+      "translation": "当前文字与背景的对比度为 ${contrast}:1。正文需要 ${required}:1。",
+      "scope": "Appearance contrast warning",
+      "preserve": "ratios"
+    },
+    {
+      "source_template": "This background is ${darkOrLight}, but parts of the app still use ${mode} mode. Choose a different background if they do not match.",
+      "translation": "此背景为${darkOrLight}，应用的部分界面仍使用${mode}模式。若不匹配，请选择其他背景。",
+      "scope": "Appearance warning",
+      "preserve": "known light/dark modes"
+    },
+    {
+      "source_template": "Downloading the video… ${received} of ${total}",
+      "translation": "正在下载视频… ${received} / ${total}",
+      "scope": "download progress",
+      "preserve": "formatted sizes"
+    },
+    {
+      "source_template": "Getting the transcription model, ${received} of ${total} MB",
+      "translation": "正在获取转写模型，${received} / ${total} MB",
+      "scope": "media transcript progress title",
+      "preserve": "numeric sizes"
+    },
+    {
+      "source_template": "Preparing transcript · ${percent}%",
+      "source_fragment": "Preparing transcript · ",
+      "translation": "正在准备转写 · ${percent}%",
+      "scope": "media transcript status",
+      "preserve": "percentage; fragment in dictionary"
+    },
+    {
+      "source_template": "${count} comments here: ${numbers}",
+      "translation": "这里有 ${count} 条评论：${numbers}",
+      "scope": "comment marker title",
+      "preserve": "counts and marker numbers"
+    },
+    {
+      "source_template": "Use ${o.author}'s comment",
+      "translation": "使用 ${author} 的评论",
+      "scope": "review checkbox aria (preserve current English aria for compatibility)",
+      "preserve": "reviewer name"
+    },
+    {
+      "source_template": "Opacity ${t.percent}%; Size ${e}; Request ${e.number}",
+      "translation": "不透明度 ${percent}%；大小 ${size}；请求 ${number}",
+      "scope": "app-owned title only",
+      "preserve": "numeric values"
+    },
+    {
+      "source_template": "Show all ${r} more in the tree",
+      "translation": "在列表中显示其余 ${r} 项",
+      "scope": "media tree title",
+      "preserve": "count"
+    },
+    {
+      "source_template": "Filter: ${c}, ${kind}; Source: ${source}",
+      "translation": "筛选：${label}，${kind}；来源：${source}",
+      "scope": "media filter title",
+      "preserve": "unknown source names"
+    },
+    {
+      "source_template": "See the projects on your ${E().computer} that aren't in HyperFrames yet, and import them",
+      "translation": "查看这台 ${computer} 上尚未加入 HyperFrames 的项目，并导入它们",
+      "scope": "project import button title",
+      "preserve": "platform name; proven Mac and PC full-title expansions added"
+    },
+    {
+      "source_template": "Show ${i.label}",
+      "translation": "显示${knownCategoryTranslation}",
+      "scope": "homepage inspiration category title",
+      "preserve": "only known app category labels; Motion graphics/Shaders/Mobile Ads full-title expansions added"
+    }
+  ],
+  "verification": {
+    "json_valid": true,
+    "all_keys_strings": true,
+    "all_values_strings": true,
+    "all_dictionary_keys_found_in_extracted_sources": false,
+    "brand_and_technical_reserved_keys_absent": true,
+    "original_app_or_bundle_modified": false,
+    "source_offsets_unit": "character offsets, not byte offsets",
+    "ui_live_verification": "Only Root is performing authorized live verification. This dictionary audit itself was static.",
+    "all_dictionary_keys_proven_by_literals_or_bounded_template_expansions": true,
+    "sample_prefill_content_preserved": true,
+    "aria_labels_preserved_by_root": true
+  },
+  "proven_rendered_variants": [
+    {
+      "key": "See the projects on your Mac that aren't in HyperFrames yet, and import them",
+      "translation": "查看这台 Mac 上尚未加入 HyperFrames 的项目，并导入它们",
+      "template": "See the projects on your ${E().computer} that aren't in HyperFrames yet, and import them",
+      "template_source": {
+        "file": "index-D0Ttr0Tl.js",
+        "character_offset": 792983
+      },
+      "variable_source": {
+        "file": "src-CSR3sU3u.js",
+        "character_offset": 5036395,
+        "source_literal": "computer:`Mac`"
+      }
+    },
+    {
+      "key": "See the projects on your PC that aren't in HyperFrames yet, and import them",
+      "translation": "查看这台 PC 上尚未加入 HyperFrames 的项目，并导入它们",
+      "template": "See the projects on your ${E().computer} that aren't in HyperFrames yet, and import them",
+      "template_source": {
+        "file": "index-D0Ttr0Tl.js",
+        "character_offset": 792983
+      },
+      "variable_source": {
+        "file": "src-CSR3sU3u.js",
+        "character_offset": 5036720,
+        "source_literal": "computer:`PC`"
+      }
+    },
+    {
+      "key": "Show Motion graphics",
+      "translation": "显示动态图形",
+      "template": "Show ${i.label}",
+      "template_source": {
+        "file": "index-D0Ttr0Tl.js",
+        "character_offset": 205246
+      },
+      "variable_source": {
+        "file": "src-CSR3sU3u.js",
+        "character_offset": 5190519,
+        "source_literal": "label:`Motion graphics`"
+      }
+    },
+    {
+      "key": "Show Shaders",
+      "translation": "显示着色器",
+      "template": "Show ${i.label}",
+      "template_source": {
+        "file": "index-D0Ttr0Tl.js",
+        "character_offset": 205246
+      },
+      "variable_source": {
+        "file": "src-CSR3sU3u.js",
+        "character_offset": 5190658,
+        "source_literal": "label:`Shaders`"
+      }
+    },
+    {
+      "key": "Show Mobile Ads",
+      "translation": "显示移动广告",
+      "template": "Show ${i.label}",
+      "template_source": {
+        "file": "index-D0Ttr0Tl.js",
+        "character_offset": 205246
+      },
+      "variable_source": {
+        "file": "src-CSR3sU3u.js",
+        "character_offset": 5190612,
+        "source_literal": "label:`Mobile Ads`"
+      }
+    }
+  ],
+  "home_followup_audit": {
+    "trigger": "Root cold-start screenshot exposed array fragments, config.line and constant placeholders omitted by a direct-prop-only scan.",
+    "mode": "Static read-only bundle review; no application/browser operation by this sub-agent.",
+    "previous_count": 1091,
+    "current_count": 1117,
+    "added_count": 26,
+    "literal_additions": [
+      {
+        "key": "New to this? ",
+        "translation": "第一次使用？ ",
+        "source": [
+          {
+            "file": "index-D0Ttr0Tl.js",
+            "character_offset": 227478
+          }
+        ],
+        "kind": "literal_or_exact_whitespace_normalized_literal"
+      },
+      {
+        "key": "New to this?",
+        "translation": "第一次使用？",
+        "source": [
+          {
+            "file": "index-D0Ttr0Tl.js",
+            "character_offset": 227478
+          }
+        ],
+        "kind": "literal_or_exact_whitespace_normalized_literal"
+      },
+      {
+        "key": "Up to a minute of video, in your own voice",
+        "translation": "用你自己的声音，制作最长一分钟的视频",
+        "source": [
+          {
+            "file": "index-D0Ttr0Tl.js",
+            "character_offset": 673537
+          }
+        ],
+        "kind": "literal_or_exact_whitespace_normalized_literal"
+      },
+      {
+        "key": "Describe your video. Type @ for files, your projects and the media library, or drop a project to bring it in. Type # to see what HyperFrames can do.",
+        "translation": "描述你的视频。输入 @ 引用文件、项目和媒体库，或拖入项目。输入 # 查看 HyperFrames 的功能。",
+        "source": [
+          {
+            "file": "index-D0Ttr0Tl.js",
+            "character_offset": 588136
+          }
+        ],
+        "kind": "literal_or_exact_whitespace_normalized_literal"
+      },
+      {
+        "key": "Introducing",
+        "translation": "全新推出",
+        "source": [
+          {
+            "file": "index-D0Ttr0Tl.js",
+            "character_offset": 624336
+          }
+        ],
+        "kind": "literal_or_exact_whitespace_normalized_literal"
+      },
+      {
+        "key": "Generated sound",
+        "translation": "生成音效",
+        "source": [
+          {
+            "file": "index-D0Ttr0Tl.js",
+            "character_offset": 673618
+          }
+        ],
+        "kind": "literal_or_exact_whitespace_normalized_literal"
+      },
+      {
+        "key": "Camera moves",
+        "translation": "镜头运动",
+        "source": [
+          {
+            "file": "index-D0Ttr0Tl.js",
+            "character_offset": 673648
+          }
+        ],
+        "kind": "literal_or_exact_whitespace_normalized_literal"
+      },
+      {
+        "key": "Characters",
+        "translation": "角色",
+        "source": [
+          {
+            "file": "index-D0Ttr0Tl.js",
+            "character_offset": 673675
+          },
+          {
+            "file": "src-CSR3sU3u.js",
+            "character_offset": 1174764
+          }
+        ],
+        "kind": "literal_or_exact_whitespace_normalized_literal"
+      },
+      {
+        "key": "Add as inspiration",
+        "translation": "添加为灵感",
+        "source": [
+          {
+            "file": "index-D0Ttr0Tl.js",
+            "character_offset": 204292
+          }
+        ],
+        "kind": "literal_or_exact_whitespace_normalized_literal"
+      },
+      {
+        "key": "By ",
+        "translation": "作者：",
+        "source": [
+          {
+            "file": "index-D0Ttr0Tl.js",
+            "character_offset": 205577
+          },
+          {
+            "file": "src-CPQFAD4p.js",
+            "character_offset": 422542
+          }
+        ],
+        "kind": "literal_or_exact_whitespace_normalized_literal"
+      },
+      {
+        "key": "Couldn't load the videos.",
+        "translation": "视频加载失败。",
+        "source": [
+          {
+            "file": "index-D0Ttr0Tl.js",
+            "character_offset": 226136
+          }
+        ],
+        "kind": "literal_or_exact_whitespace_normalized_literal"
+      },
+      {
+        "key": "Motion graphics",
+        "translation": "动态图形",
+        "source": [
+          {
+            "file": "index-D0Ttr0Tl.js",
+            "character_offset": 228496
+          },
+          {
+            "file": "src-CSR3sU3u.js",
+            "character_offset": 5190526
+          }
+        ],
+        "kind": "literal_or_exact_whitespace_normalized_literal"
+      },
+      {
+        "key": "Mobile Ads",
+        "translation": "移动广告",
+        "source": [
+          {
+            "file": "src-CSR3sU3u.js",
+            "character_offset": 5190619
+          }
+        ],
+        "kind": "literal_or_exact_whitespace_normalized_literal"
+      },
+      {
+        "key": "Shaders",
+        "translation": "着色器",
+        "source": [
+          {
+            "file": "src-CSR3sU3u.js",
+            "character_offset": 5190665
+          }
+        ],
+        "kind": "literal_or_exact_whitespace_normalized_literal"
+      },
+      {
+        "key": "9:16, room above your head",
+        "translation": "9:16，头顶留出空间",
+        "source": [
+          {
+            "file": "index-D0Ttr0Tl.js",
+            "character_offset": 219083
+          }
+        ],
+        "kind": "literal_or_exact_whitespace_normalized_literal"
+      },
+      {
+        "key": "9:16, tight framing works",
+        "translation": "9:16，可使用紧凑取景",
+        "source": [
+          {
+            "file": "index-D0Ttr0Tl.js",
+            "character_offset": 219128
+          }
+        ],
+        "kind": "literal_or_exact_whitespace_normalized_literal"
+      },
+      {
+        "key": "One speaker, locked shot",
+        "translation": "单人讲话，固定镜头",
+        "source": [
+          {
+            "file": "index-D0Ttr0Tl.js",
+            "character_offset": 219179
+          }
+        ],
+        "kind": "literal_or_exact_whitespace_normalized_literal"
+      },
+      {
+        "key": "Grab attention in the first seconds",
+        "translation": "在开头几秒吸引注意",
+        "source": [
+          {
+            "file": "index-D0Ttr0Tl.js",
+            "character_offset": 679676
+          }
+        ],
+        "kind": "literal_or_exact_whitespace_normalized_literal"
+      },
+      {
+        "key": "Show the product doing its job",
+        "translation": "展示产品的实际作用",
+        "source": [
+          {
+            "file": "index-D0Ttr0Tl.js",
+            "character_offset": 679765
+          }
+        ],
+        "kind": "literal_or_exact_whitespace_normalized_literal"
+      },
+      {
+        "key": "Flip from problem to answer",
+        "translation": "从问题转向解决方案",
+        "source": [
+          {
+            "file": "index-D0Ttr0Tl.js",
+            "character_offset": 679848
+          }
+        ],
+        "kind": "literal_or_exact_whitespace_normalized_literal"
+      },
+      {
+        "key": "Land the brand and the ask",
+        "translation": "突出品牌并提出行动要求",
+        "source": [
+          {
+            "file": "index-D0Ttr0Tl.js",
+            "character_offset": 679936
+          }
+        ],
+        "kind": "literal_or_exact_whitespace_normalized_literal"
+      }
+    ],
+    "rendered_variant_additions": [
+      "See the projects on your Mac that aren't in HyperFrames yet, and import them",
+      "See the projects on your PC that aren't in HyperFrames yet, and import them",
+      "Show Motion graphics",
+      "Show Shaders",
+      "Show Mobile Ads"
+    ],
+    "preserved_sample_text": [
+      "A slow walk down a rainy city street at dusk, past lit shop windows.",
+      "talks to the camera about their day, in one take.",
+      "The quote",
+      "In a data center",
+      "Claude edited this",
+      "One photo",
+      "HeyGen Video 1",
+      "Our new running shoe, for people training for their first 10K"
+    ],
+    "important_scoping_notes": [
+      "[data-wall-name] is metadata on the entire .home-startbar and some app-owned Add/Use buttons. Preserve its value, but do not exclude that entire ancestor subtree.",
+      "Root permits only the read-only .cm-placeholder[contenteditable=false][aria-hidden=true] as a translated app-owned placeholder; .cm-content/live editor values and submitted messages remain protected.",
+      "Show ${i.label} must only expand known application categories. Do not build a generic Show replacement for arbitrary user media titles.",
+      "New to this? is an independent app-owned Text node; translation must preserve the adjacent Take the step by step button content and icon.",
+      "Generated sound / Camera moves / Characters are app-configured feature labels on banner art. The video prefill scripts and media identifiers remain unchanged."
+    ]
+  }
+}
