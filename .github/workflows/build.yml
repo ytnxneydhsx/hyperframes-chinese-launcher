@@ -56,7 +56,13 @@ jobs:
         if: matrix.runtime == 'win-x64'
         shell: pwsh
         run: |
-          $p = Start-Process ./dist/windows/win-x64/HyperFramesChinese.exe -ArgumentList '--self-test' -Wait -PassThru -RedirectStandardOutput self-test.json
+          $p = Start-Process ./dist/windows/win-x64/HyperFramesChinese.exe -ArgumentList '--self-test' -PassThru -RedirectStandardOutput self-test.json -RedirectStandardError self-test-progress.log
+          if (-not $p.WaitForExit(45000)) {
+            Get-Content self-test-progress.log -ErrorAction SilentlyContinue
+            Stop-Process -Id $p.Id -Force
+            throw 'Native self-test timed out'
+          }
+          Get-Content self-test-progress.log -ErrorAction SilentlyContinue
           Get-Content self-test.json
           if ($p.ExitCode -ne 0) { throw 'Native self-test failed' }
       - name: Official Windows app integration
@@ -68,9 +74,10 @@ jobs:
           name: windows-${{ matrix.runtime }}
           path: dist/windows/${{ matrix.runtime }}
       - uses: actions/upload-artifact@v7
-        if: matrix.runtime == 'win-x64'
+        if: always() && matrix.runtime == 'win-x64'
         with:
           name: windows-verification
           path: |
             self-test.json
+            self-test-progress.log
             dist/verification

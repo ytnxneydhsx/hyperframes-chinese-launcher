@@ -30,7 +30,9 @@ internal static class SelfTest
         {
             try
             {
+                Console.Error.WriteLine("START " + name);
                 action();
+                Console.Error.WriteLine("PASS " + name);
                 results.Add(new
                 {
                     name,
